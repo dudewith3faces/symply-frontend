@@ -42,10 +42,6 @@ export const BackendService = () => {
       data: { payload },
     } = await axios.get<IResponse<IFact[]>>("http://localhost:5000/api/fact");
     return payload;
-    // return [
-    //   { title: "Another one", id: "3" },
-    //   { title: "fuck you", id: "4" },
-    // ];
   };
 
   useEffect(() => {
